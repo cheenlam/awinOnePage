@@ -27,8 +27,8 @@ function openTime(start,end) {
     timeList.push(opNum.toString())
     for (let i = 0; opNum != opEnd; i++) {
         opNum == 23 ? opNum = 0 : opNum++
-            timeList.push(opNum.toString())
+            timeList.push(opNum.toString().padStart(2,'0'))
     }
-    // console.log(`開放時間：${timeList} (時)`)
+    console.log(`開放時間：${timeList} (時)`)
     return timeList;
 }
